@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ashwini Mogurampally — Computer Science and Cybersecurity student portfolio." />
+  <title>Ashwini Mogurampally | Portfolio</title>
+  <style>
+    :root{--bg:#090d18;--panel:#111a2b;--text:#edf2ff;--muted:#a9b5ca;--accent:#65e0d2;--accent2:#9b8cff;--line:#26334a}
+    *{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at 80% 10%,#182747 0,transparent 30%),var(--bg);color:var(--text);line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,90%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#090d18df;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:1.25rem;font-weight:850;letter-spacing:.04em}.logo span{color:var(--accent)}
+    .navlinks{display:flex;gap:24px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--accent)}
+    .menu{display:none;background:none;color:var(--text);border:1px solid var(--line);padding:7px 11px;border-radius:8px}
+    .hero{min-height:84vh;display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:40px;padding:75px 0}
+    .eyebrow{color:var(--accent);font-size:.8rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+    h1{font-size:clamp(2.7rem,7vw,5.4rem);line-height:1.04;letter-spacing:-.055em;margin:18px 0}
+    h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{max-width:650px;color:var(--muted);font-size:1.08rem}
+    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:11px 19px;border-radius:999px;font-weight:750;border:1px solid var(--accent);transition:.2s}
+    .btn.primary{background:var(--accent);color:#07121b}.btn:hover{transform:translateY(-3px)}
+    .orb{width:min(300px,70vw);aspect-ratio:1;border-radius:50%;margin:auto;background:radial-gradient(circle at 35% 30%,#b7fff4,#65e0d2 20%,#6559b7 55%,#151d38 72%);box-shadow:0 0 90px #65e0d244;position:relative}
+    .orb:after{content:"";position:absolute;inset:-18px;border:1px solid #65e0d277;border-radius:50%;transform:rotate(-25deg) scaleY(.35)}
+    section{padding:76px 0;scroll-margin-top:70px}.section-tag{color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+    h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em;margin:8px 0 28px}
+    .muted{color:var(--muted)}.aboutbox,.card,.skillbox,.contactbox{background:linear-gradient(145deg,#141f33,#0f1727);border:1px solid var(--line);border-radius:18px;padding:25px}
+    .aboutbox p+p{margin-top:12px}.grid{display:grid;gap:18px}.grid.two{grid-template-columns:repeat(2,1fr)}.grid.three{grid-template-columns:repeat(3,1fr)}
+    .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.skillbox h3,.card h3{margin-bottom:12px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}.chip{font-size:.83rem;color:#dce7f8;background:#202d43;border:1px solid #31415c;padding:5px 10px;border-radius:99px}
+    .card{transition:.2s}.card:hover{transform:translateY(-5px);border-color:#65e0d288}.card p{color:var(--muted)}
+    .card ul{padding-left:20px;color:var(--muted);margin:12px 0}.card li{margin:5px 0}.meta{color:var(--accent)!important;font-size:.84rem;font-weight:750;margin-bottom:7px}
+    .timeline{border-left:2px solid var(--accent);padding-left:22px}.timeline .card{margin-bottom:16px}
+    .contactlinks{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}.contactlinks a{border:1px solid var(--line);border-radius:10px;padding:10px 14px;color:var(--accent)}
+    footer{border-top:1px solid var(--line);padding:25px 0;text-align:center;color:var(--muted);font-size:.9rem}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;text-align:center;padding-top:65px}.lead{margin:auto}.actions{justify-content:center}.orb{width:190px;grid-row:1}.grid.three,.grid.two,.skills{grid-template-columns:1fr}.navlinks{display:none;position:absolute;top:69px;left:0;right:0;background:#0b1220;padding:20px;flex-direction:column;gap:15px;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}}
+  </style>
+</head>
+<body>
+<header><nav class="wrap">
+  <a class="logo" href="#home">ASHWINI<span>.</span></a>
+  <button class="menu" id="menuBtn" aria-label="Toggle navigation">☰</button>
+  <div class="navlinks" id="navlinks">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </div>
+</nav></header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <p class="eyebrow">Computer Science · Cybersecurity · Cloud</p>
+      <h1>Hi, I'm<br><span>Ashwini Mogurampally</span></h1>
+      <p class="lead">A Computer Science and Engineering student interested in cybersecurity, cloud infrastructure and software development. I enjoy building practical solutions and learning how secure, reliable systems work.</p>
+      <div class="actions"><a class="btn primary" href="#projects">Explore my work</a><a class="btn" href="#contact">Contact me</a></div>
+    </div>
+    <div class="orb" aria-hidden="true"></div>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <p class="section-tag">01 / About</p><h2>A little about me</h2>
+    <div class="aboutbox">
+      <p class="muted">I am pursuing a B.Tech in Computer Science and Engineering with a specialization in Cybersecurity at Malla Reddy Engineering College for Women, Hyderabad. My interests include cloud security, networking, backend development, Linux and problem-solving.</p>
+      <p class="muted">I am looking for opportunities where I can apply my technical knowledge, collaborate with a team and grow as an engineer.</p>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <p class="section-tag">02 / Skills</p><h2>Technical toolbox</h2>
+    <div class="skills">
+      <div class="skillbox"><h3>Programming</h3><div class="chips"><span class="chip">Python</span><span class="chip">Java</span><span class="chip">C</span><span class="chip">C++</span><span class="chip">JavaScript</span></div></div>
+      <div class="skillbox"><h3>Cloud & DevOps</h3><div class="chips"><span class="chip">AWS EC2</span><span class="chip">AWS S3</span><span class="chip">Docker</span><span class="chip">CI/CD</span><span class="chip">Terraform</span><span class="chip">Linux</span></div></div>
+      <div class="skillbox"><h3>Networking & Security</h3><div class="chips"><span class="chip">CCNA fundamentals</span><span class="chip">TCP/IP</span><span class="chip">VLANs</span><span class="chip">Routing & Switching</span><span class="chip">Cybersecurity</span></div></div>
+      <div class="skillbox"><h3>Web & Databases</h3><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">React basics</span><span class="chip">FastAPI</span><span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">Git</span></div></div>
+    </div>
+  </div></section>
+
+  <section id="experience"><div class="wrap">
+    <p class="section-tag">03 / Experience</p><h2>Experience</h2>
+    <div class="timeline"><div class="card">
+      <p class="meta">Remote Internship · 2026</p><h3>Software Development Intern — Cognifyz Technologies</h3>
+      <p>Worked on software development activities involving coding, testing, debugging and maintaining application components. Focused on improving code quality and strengthening backend development skills.</p>
+    </div></div>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <p class="section-tag">04 / Projects</p><h2>Selected projects</h2>
+    <div class="grid three">
+      <article class="card"><p class="meta">CYBERSECURITY · MACHINE LEARNING</p><h3>ML-Based Intrusion Detection System</h3><p>A machine-learning project focused on identifying potentially malicious network activity from data patterns.</p><div class="chips" style="margin-top:16px"><span class="chip">Python</span><span class="chip">Machine Learning</span><span class="chip">Cybersecurity</span></div></article>
+      <article class="card"><p class="meta">CLOUD · SECURITY</p><h3>Secure Cloud Data Storage</h3><p>A project exploring secure data storage and sharing techniques to support data protection in cloud environments.</p><div class="chips" style="margin-top:16px"><span class="chip">Cloud</span><span class="chip">Data Security</span></div></article>
+      <article class="card"><p class="meta">NETWORKING · CISCO</p><h3>Enterprise Network Design</h3><p>A Packet Tracer lab using routers, switches and PCs to practise network topology, routing, switching and security configuration.</p><div class="chips" style="margin-top:16px"><span class="chip">Cisco Packet Tracer</span><span class="chip">Networking</span><span class="chip">VLANs</span></div></article>
+    </div>
+  </div></section>
+
+  <section id="education"><div class="wrap">
+    <p class="section-tag">05 / Education</p><h2>Education & learning</h2>
+    <div class="grid two">
+      <div class="card"><p class="meta">2023 — 2027</p><h3>B.Tech — Computer Science & Engineering</h3><p>Malla Reddy Engineering College for Women, Hyderabad</p><p class="muted">Specialization: Cybersecurity</p></div>
+      <div class="card"><p class="meta">CERTIFICATIONS & TRAINING</p><h3>Continuous learning</h3><ul><li>Cisco Networking Academy coursework</li><li>Linux Unhatched</li><li>Employability Skills Training — Mahindra Pride Classroom</li></ul></div>
+    </div>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <p class="section-tag">06 / Contact</p><h2>Let's connect</h2>
+    <div class="contactbox"><p class="muted">Have an opportunity, project or question? Feel free to reach out.</p>
+      <div class="contactlinks">
+        <a href="mailto:ashwinimogurampally07@gmail.com">Email</a>
+        <a href="https://github.com/Ashwinii770" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Ashwini Mogurampally · Built with HTML, CSS & JavaScript</div></footer>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navlinks = document.getElementById('navlinks');
+  menuBtn.addEventListener('click', () => navlinks.classList.toggle('open'));
+  navlinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navlinks.classList.remove('open')));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
